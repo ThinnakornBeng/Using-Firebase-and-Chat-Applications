@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_work_shop_2/screens/admin.dart';
+import 'package:flutter_application_work_shop_2/screens/chat.dart';
 import 'package:flutter_application_work_shop_2/screens/home_page.dart';
 
 import '../models/user_model.dart';
@@ -84,7 +85,7 @@ class _AuthenticationState extends State<Authentication> {
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomePage(),
+                    builder: (context) => ChatPage(),
                   ),
                   (route) => false);
               break;
